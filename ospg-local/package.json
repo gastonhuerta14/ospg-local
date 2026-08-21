@@ -1,0 +1,24 @@
+{
+  "name": "ospg-cruce-compras",
+  "version": "1.0.0",
+  "description": "Cruce de compras de medicamentos OSPG vs SMC — entorno local",
+  "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "smoke": "node scripts/smoke.js",
+    "auditoria": "node scripts/auditoria.js",
+    "test:formatos": "node scripts/test-formatos.js",
+    "test": "node scripts/test-formatos.js && node scripts/smoke.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "author": "Área de Compras OSPG",
+  "license": "UNLICENSED"
+}

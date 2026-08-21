@@ -1,0 +1,6 @@
+node_modules/
+.env
+data/salida/*.json
+data/entrada/**/*.xls
+data/entrada/**/*.xlsx
+*.tmp
